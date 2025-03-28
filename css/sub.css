@@ -1,0 +1,153 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+.tm_menu{display: none;}
+.tm_gnb{display: none;}
+header {height: 5.2vw; position: fixed; top:0; left:0; width:100%; z-index: 1}
+header.on {outline: 0.052vw solid #999;}
+header .logo{float:left; display: block; background:url(../image/main_logo.png) no-repeat;margin-left: 5.208vw; width:5.208vw; height: 3.645vw; background-size: 100% auto; text-indent: -9999px; margin-top:0.781vw}
+header .gnb{float:left; position: relative; margin-left: 21.25vw}
+header .gnb>li{float:left; margin-right: 3.645vw;}
+header .gnb .dep1 a{display: block; line-height: 5.2vw; color:#ddd; font-weight: 500; font-size: 1.25vw}
+header .gnb .dep1.on a{font-weight: 700; color:#222;}
+header .gnb .dep2{position: absolute; left:-20.052vw; top:7.083vw;}
+header .gnb .dep2 li{margin-top:1.041vw;}
+header .gnb .dep2 li .dep2_title{font-size: 0.937vw; color:#444; display: none;}
+header .gnb .dep2 li .dep2_title.on{color:#555; font-weight: 700; text-decoration: underline}
+header .gnb .dep2 li:nth-child(1){margin-top:0;}
+
+header .gnb .dep3{position: absolute; left:20.156vw; top:0; width:56.115vw; display: none;}
+header .gnb .dep3 li{float:left; text-align: center; margin-right: 1.041vw; width:13.248vw; margin-top:1.0416vw;}
+header .gnb .dep3 li:last-child{margin-right: 0;}
+header .gnb .dep3 li .product_img img{border:0.052vw solid #999; width:100%;}
+header .gnb .dep3 li p{margin-top:0.26vw;}
+header .gnb .dep3 li .product_title{font-size: 0.520vw;}
+header .gnb .dep3 li .product_price{font-size: 0.520vw;}
+header .gnb .dep3 h3{color:#444; font-size: 0.937vw}
+
+header .gnb_bg{width:100%; height:26.092vw; position: absolute; left:0; top:0; background-color: #fff; z-index: -1; display: none; border-bottom: 0.052vw solid #999; box-shadow: 0 2px 3px rgba(0,0,0,.25);}
+
+header .util{float:right; margin-top:2.135vw;}
+header .util li{float:left; margin-right: 2.083vw}
+header .util .search{display: block; background: url(../image/util/search.png) no-repeat; width: 0.989vw; height: 0.989vw; background-size: 100% auto; text-indent: -9999px;}
+header .util .login{display: block; background: url(../image/util/login.png) no-repeat; width: 1.041vw; height: 1.041vw; background-size: 100% auto; text-indent: -9999px;}
+header .util .shopping_bag{display: block; background: url(../image/util/shopping-bag.png) no-repeat; width: 1.041vw; height: 0.989vw; background-size: 100% auto; text-indent: -9999px;}
+
+header .nation{float:right; margin-right: 5.208vw; margin-top:2.135vw; cursor: pointer;}
+header .nation li{padding-top:2px; display: none; width: 1.458vw}
+header .nation li.on{display: block;}
+header .nation li:first-child{display: block; padding-top:0}
+header .nation li img{width:100%;}
+
+/*본문*/
+.sub_title{text-align: center; margin-top:7vw; font-size: 1.458vw; margin-bottom: 4.167vw; color: #333; font-weight: 700;}
+.sub_list{width:82.245vw; margin:0 auto;}
+.sub_list li{width:18.646vw; height:23.231vw; float:left; margin-right: 2.554vw; margin-bottom: 4.948vw;}
+.sub_list li:nth-of-type(4n){margin-right: 0}
+.sub_list li img{width:100%;}
+.sub_list li p {text-align: center;}
+.sub_list li p a{color:#333; font-size: 0.733vw}
+.sub_list li:hover p a{color:#ccc;}
+.sub_list li p:nth-child(2){margin-top:1.042vw}
+.sub_list li p:nth-child(3){margin-top:0.521vw}
+
+.sub_list:nth-child(2){display: none;}
+.sub_list:nth-child(3){display: none;}
+.sub_list:nth-child(4){display: none;}
+
+.pagenation{width: 5.84vw; margin: 0 auto;}
+.pagenation li{float:left; width:1.46vw;}
+.pagenation li a{display: block; font-size: 0.729vw; font-weight: 500; color:#333; margin-right: 1.042vw; width:1.46vw; text-align: center;}
+.pagenation li:hover a{color:#666; text-decoration: underline;}
+.pagenation li.on a{color: #bbb; font-weight: 700;}
+
+/*footer*/
+footer{margin-top: 5.208vw;}
+.f_top{width:100%; height: 1.98vw; background-color: #000; border-bottom: 0.052vw solid #666;}
+.f_top .f_top_left{float: left; margin-left: 8.333vw; line-height: 1.98vw;}
+.f_top .f_top_left li{float: left; margin-right: 0.781vw;}
+.f_top .f_top_left li a{color: #fff; font-weight: 500; font-size: 0.521vw;}
+.f_top .f_top_right{float: right; margin-right: 8.333vw;}
+.f_top .f_top_right ul{line-height: 1.98vw; height: 1.98vw;}
+.f_top .f_top_right li{float: left; margin-right: 0.781vw; margin-top:0.625vw;}
+.f_top .f_top_right li img{width: 100%;}
+.f_top .f_top_right li:nth-child(1){width:0.83vw; height: 0.781vw; line-height: 0.781vw;}
+.f_top .f_top_right li:nth-child(2){width:0.885vw; height: 0.729vw; line-height: 0.729vw;}
+.f_top .f_top_right li:nth-child(3){width:0.781vw; height: 0.83vw; line-height: 0.83vw;}
+.f_top .f_top_right li:nth-child(4){width:0.885vw; height: 0.781vw; line-height: 0.781vw;}
+
+.f_bottom{width:100%; height: 7.656vw; background-color: #000; text-align: center; color:#fff; font-size: 0.521vw; font-weight: 500;}
+.f_bottom .f_logo{padding-top: 0.781vw; width: 3.958vw; height: 2.76vw; margin:0 auto;}
+.f_bottom .f_logo img{width: 100%}
+.f_bottom p{margin-top: 0.52vw;}
+
+/*태블릿*/
+@media screen and (max-width:980px){
+	.gnb,.gnb_bg,.nation,.util{display: none;}
+	.tm_menu{display: block; float:right; background: url(../image/mobile/hamburger.png) no-repeat; width: 2.143vw; height: 1.122vw; border:none; text-indent: -9999px; margin-top:1.64vw; margin-right: 5.208vw; cursor: pointer; outline: none; background-size: 100%}
+	.tm_gnb{display: block; position: absolute; right:-25.51vw; top:0; background-color: #fff; width:23.572vw; padding-left: 1.02vw; height: 100vw;}
+	.tm_search_box{height: 1.62vw; margin-top:3.571vw;  margin-bottom: 2.551vw; width: 22.245vw; position: relative}
+	.tm_search{width: 22.245vw; height: 1.632vw; border:0.102vw solid #999;}
+	.tm_search::placeholder{color:#999; font-size: 1.224vw; padding-left: 1.224vw;}
+	.tm_search_icon{position: absolute; top:0.306vw; right:1.122vw; width:1.122vw; height: 1.224vw;}
+	.tm_search_icon img{width:100%;}
+	.tm_dep1>li>a{display: block; color:#666; font-size:1.02vw; margin-bottom: 1.02vw; margin-top: 1.02vw; position: relative;}
+	.tm_dep1>li>a::after{content: ''; display: block; background: url(../image/mobile/bottom.png) no-repeat; width: 0.918vw; height: 0.816vw; position: absolute; top:0; right:1.02vw;}
+	.tm_dep1>li>a:last-child::after{display: none;}
+	.tm_dep1>li>a.on{color:#ccc;}
+	.tm_dep1>li>a.on::after{background-image: url(../image/mobile/top.png)}
+	.tm_dep2{display: none;}
+	.tm_dep2>li>a{display: block; color:#666; font-size: 0.816vw; margin-bottom: 1.02vw; padding-left: 1.122vw;}
+	.tm_dep2>li>a:hover{color:#ccc;}
+	.tm_nation li{margin-bottom: 1.02vw; display: none;}
+	.tm_nation li:nth-child(1){display: block;}
+	.tm_nation li.on{display: block;}
+	.tm_nation img{float:left; width: 1.224vw; height: 0.918vw;}
+	.tm_nation p{float:left; font-size: 1.02vw; color:#666;}
+	
+	header:hover{background-color: #000}
+	
+	.f_bottom{height: 10vw;}
+}
+
+@media screen and (max-width:740px){
+	.sub_list{width:80.1vw; margin:0 auto;}
+	.sub_list li{width:22.966vw; height:31.831vw; float:left; margin-right: 5.554vw; margin-bottom: 4.948vw;}
+	.sub_list li:nth-of-type(4n){margin-right: 5.554vw;}
+	.sub_list li:nth-of-type(3n){margin-right: 0}
+	.pagenation{width:7.838vw;}
+	.pagenation li{margin-right: 0.5vw;}
+	
+	.f_top_left{margin-left: 0 !important; width:100%; text-align: center;}
+	.f_top_left ul{margin: 0 auto !important; display: inline-block}
+	.f_top_right{display: none;}
+	.f_bottom{height: 11vw; padding-top:1vw;}
+	
+	.f_bottom p:nth-child(2){display: none;}
+}
+
+@media screen and (max-width:588px){
+	.f_bottom{height: 13.5vw !important;}
+}
+
+@media screen and (max-width:498px){
+	.f_bottom{height: 17vw !important; padding-top:1.5vw !important}
+}
+
+
+@media screen and (max-width:480px){
+	.sub_list{width:80.1vw; margin:0 auto;}
+	.sub_list li{width:36.9vw; height:51.831vw; float:left; margin-bottom: 4.948vw;}
+	.sub_list li:nth-of-type(4n){margin-right: 0}
+	.sub_list li:nth-of-type(3n){margin-right: 0}
+	.sub_list li:nth-of-type(2n){margin-right: 0}
+	.sub_list li:nth-of-type(2n+1){margin-right: 6vw}
+	
+	.pagenation{width:9.93vw;}
+	.pagenation li{margin-right: 1vw;}
+	
+	.f_top{height: 2.7vw;}
+}
